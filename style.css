@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #2f3640;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: #40739e;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #888;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2f3640;
+}
+
+/* Chart */
+.chart-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.chart .bar {
+  flex: 1;
+  background: #00a8ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+  transition: 0.3s;
+}
+
+.chart .bar:hover {
+  background: #0097e6;
+}
+
+/* Table */
+.table-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #40739e;
+  color: #fff;
+}
+
+tbody tr:hover {
+  background: #f1f2f6;
+}
